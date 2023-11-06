@@ -371,15 +371,15 @@ Divvy_Trips_2019_Q4.zip</p>
 <pre class="r"><code>install.packages(&quot;dbplyr&quot;)</code></pre>
 <pre><code>## 
 ## The downloaded binary packages are in
-##  /var/folders/yw/h_p1t11s6r58nxnr10k9cy9r0000gn/T//RtmpXTULV1/downloaded_packages</code></pre>
+##  /var/folders/yw/h_p1t11s6r58nxnr10k9cy9r0000gn/T//RtmpxcE3aK/downloaded_packages</code></pre>
 <pre class="r"><code>install.packages(&quot;RMySQL&quot;)</code></pre>
 <pre><code>## 
 ## The downloaded binary packages are in
-##  /var/folders/yw/h_p1t11s6r58nxnr10k9cy9r0000gn/T//RtmpXTULV1/downloaded_packages</code></pre>
+##  /var/folders/yw/h_p1t11s6r58nxnr10k9cy9r0000gn/T//RtmpxcE3aK/downloaded_packages</code></pre>
 <pre class="r"><code>install.packages(&quot;DBI&quot;)</code></pre>
 <pre><code>## 
 ## The downloaded binary packages are in
-##  /var/folders/yw/h_p1t11s6r58nxnr10k9cy9r0000gn/T//RtmpXTULV1/downloaded_packages</code></pre>
+##  /var/folders/yw/h_p1t11s6r58nxnr10k9cy9r0000gn/T//RtmpxcE3aK/downloaded_packages</code></pre>
 <pre class="r"><code>library(tidyverse)  #helps wrangle data</code></pre>
 <pre><code>## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ## ✔ dplyr     1.1.3     ✔ readr     2.1.4
@@ -398,7 +398,7 @@ library(RMySQL)</code></pre>
 <pre><code>## Loading required package: DBI</code></pre>
 <pre class="r"><code>library(DBI)
 getwd() #displays your working directory</code></pre>
-<pre><code>## [1] &quot;/Users/bijayamanandhar/Desktop/cyclistic_data_analytics&quot;</code></pre>
+<pre><code>## [1] &quot;/Users/bijayamanandhar/Desktop/cyclistic_analytics&quot;</code></pre>
 <div id="loading-data" class="section level3">
 <h3>loading data</h3>
 <pre class="r"><code># Upload Divvy datasets (csv files) here
@@ -559,16 +559,16 @@ random_sample</code></pre>
 <pre><code>## # A tibble: 10 × 12
 ##    started_at          ended_at            trip_duration_sec start_station_id
 ##    &lt;dttm&gt;              &lt;dttm&gt;                          &lt;dbl&gt;            &lt;dbl&gt;
-##  1 2019-05-15 09:27:00 2019-05-15 09:29:00               158              144
-##  2 2019-07-09 17:19:00 2019-07-09 17:31:00               718               39
-##  3 2019-05-14 13:53:00 2019-05-14 13:59:00               336              423
-##  4 2019-10-10 08:07:00 2019-10-10 08:17:00               615               72
-##  5 2019-07-05 18:10:00 2019-07-05 18:20:00               601              424
-##  6 2019-08-22 06:33:00 2019-08-22 06:43:00               572              190
-##  7 2019-04-17 16:31:00 2019-04-17 16:42:00               650              350
-##  8 2019-07-10 13:31:00 2019-07-10 13:48:00               982               36
-##  9 2019-07-11 06:08:00 2019-07-11 06:16:00               459               89
-## 10 2019-08-20 19:08:00 2019-08-20 19:23:00               938              364
+##  1 2019-12-10 13:12:00 2019-12-10 13:14:00               103               43
+##  2 2019-07-07 10:50:00 2019-07-07 11:16:00              1548              132
+##  3 2019-03-23 15:10:00 2019-03-23 15:16:00               376              107
+##  4 2019-04-11 18:18:00 2019-04-11 18:24:00               371              636
+##  5 2019-12-16 16:31:00 2019-12-16 16:35:00               228               40
+##  6 2019-04-15 13:59:00 2019-04-15 14:09:00               635               25
+##  7 2019-01-20 13:25:00 2019-01-20 13:36:00               646              115
+##  8 2019-11-14 06:43:00 2019-11-14 06:53:00               585              192
+##  9 2019-04-30 18:09:00 2019-04-30 18:15:00               358               87
+## 10 2019-07-19 17:25:00 2019-07-19 17:34:00               523              341
 ## # ℹ 8 more variables: start_station_name &lt;chr&gt;, end_station_id &lt;dbl&gt;,
 ## #   end_station_name &lt;chr&gt;, member_casual &lt;chr&gt;, month_name &lt;chr&gt;, day &lt;chr&gt;,
 ## #   year &lt;chr&gt;, day_name &lt;chr&gt;</code></pre>
